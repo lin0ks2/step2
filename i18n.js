@@ -135,36 +135,20 @@ settingsTitle: "Налаштування",
       licensed: "Зареєстровано",
       notLicensed: "Не зареєстровано",
     },
-    footer.note: "",
-  footer.copy: "© 2025 Lexitron",
-
-  lifecycle.msg1: "Нет доступных словарей для старта.",
-};
+  };
 
   try {
     if (window.App && App.locales) {
       App.locales.ru = Object.assign(App.locales.ru||{}, { allLangs: "Все языки",  lang_sr: "Сербский" });
       App.locales.uk = Object.assign(App.locales.uk||{}, { allLangs: "Всі мови",   lang_sr: "Сербська" });
-      footer.note: "",
-  footer.copy: "© 2025 Lexitron",
-
-  lifecycle.msg1: "Нет доступных словарей для старта.",
-}
-  } catch(_) {  footer.note: "",
-  footer.copy: "© 2025 Lexitron",
-
-  lifecycle.msg1: "Нет доступных словарей для старта.",
-}
+    }
+  } catch(_) {}
 
 })();
 
 (function(){
   try{
-    var I = window.I18N || {  footer.note: "",
-  footer.copy: "© 2025 Lexitron",
-
-  lifecycle.msg1: "Нет доступных словарей для старта.",
-};
+    var I = window.I18N || {};
     if (I.ru) Object.assign(I.ru, {
       backupTitle: "Резервное копирование",
       backupExport: "Экспортировать",
@@ -192,25 +176,13 @@ settingsTitle: "Налаштування",
       backupImportOk: "Backup restored. The app will restart.",
       backupImportFail: "Backup restore failed. Check the file."
     });
-  }catch(_){  footer.note: "",
-  footer.copy: "© 2025 Lexitron",
-
-  lifecycle.msg1: "Нет доступных словарей для старта.",
-}
+  }catch(_){}
 })();
 (function(){
   try{
-    var I = window.I18N || {  footer.note: "",
-  footer.copy: "© 2025 Lexitron",
-
-  lifecycle.msg1: "Нет доступных словарей для старта.",
-};
+    var I = window.I18N || {};
     if (I.ru) I.ru.modeSelection = "Выбор режима";
     if (I.uk) I.uk.modeSelection = "Вибір режиму";
     if (I.en) I.en.modeSelection = "Mode selection";
-  }catch(_){  footer.note: "",
-  footer.copy: "© 2025 Lexitron",
-
-  lifecycle.msg1: "Нет доступных словарей для старта.",
-}
+  }catch(_){}
 })();
